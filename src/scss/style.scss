@@ -4,7 +4,7 @@
 @import 'vars';
 
 body{
-  background: $darkBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  background: $darkBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-welcome.png) repeat center center;
   color: $white;
   font-family: "brandon-grotesque";
   margin: 0;
@@ -192,180 +192,180 @@ img{
   }//gift-section-expanded
   &.gift-one{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-01.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-01.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-01.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-01.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-01.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-01.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-01.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-01.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-one
   &.gift-two{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-02.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-02.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-02.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-02.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-02.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-02.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-02.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-02.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-two
   &.gift-three{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-03.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-03.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-03.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-03.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-03.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-03.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-03.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-03.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-three
   &.gift-four{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-04.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-04.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-04.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-04.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-04.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-04.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-04.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-04.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-four
   &.gift-five{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-05.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-05.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-05.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-05.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-05.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-05.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-05.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-05.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-five
   &.gift-six{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-06.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-06.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-06.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-06.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-06.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-06.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-06.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-06.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-six
   &.gift-seven{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-07.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-07.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-07.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-07.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-07.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-07.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-07.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-07.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-seven
   &.gift-eight{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-08.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-08.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-08.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-08.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-08.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-08.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-08.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-08.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-eight
   &.gift-nine{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-09.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-09.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-09.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-09.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-09.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-09.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-09.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-09.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-nine
   &.gift-ten{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-10.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-10.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-10.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-10.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-10.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-10.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-10.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-10.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-ten
   &.gift-eleven{
   @include transition(all .3s ease);
-  background: $blue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-11.png) repeat center center;
+  background: $blue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-11.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-11.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-11.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-11.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-11.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-11.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-11.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
   }//&.gift-eleven
   &.gift-twelve{
   @include transition(all .3s ease);
-  background: $lightBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-12.png) repeat center center;
+  background: $lightBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-12.png) repeat center center;
     .gift-section-header{
       .gift-section-header-click-prompt{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-12.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-12.png) repeat center center;
       }
       &.expanded{
-        background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-12.png) repeat center center;
+        background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-12.png) repeat center center;
         & + .gift-section-expanded{
-          background: $red url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-12.png) repeat center center;
+          background: $red url(http://lookthinkmake.com/give/assets/img/patterns/patterns-12.png) repeat center center;
         }//& + .gift-section-expanded
       }//expanded
     }//.gift-section-header
@@ -373,7 +373,7 @@ img{
 }//gift-section
 
 .thank-you-section{
-  background: $darkBlue url(http://lookthinkmake.com/give/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  background: $darkBlue url(http://lookthinkmake.com/give/assets/img/patterns/patterns-welcome.png) repeat center center;
   padding: 35px 0;
   text-align: center;
   img{
