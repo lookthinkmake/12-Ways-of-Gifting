@@ -3,3 +3,374 @@
 @import 'neat';
 @import 'vars';
 
+body{
+  background: $darkBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  color: $white;
+  font-family: "brandon-grotesque";
+  margin: 0;
+}
+p{
+  font-size: 1.25em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+img{
+  max-width: 100%;
+}
+.ltm{
+  position: absolute;
+  text-align: center;
+  top: 35px;
+  width: 100%;
+  z-index: 9999;
+  a{
+    display: block;
+    padding: 15px;
+    img{
+      max-width: 500px;
+      width: 25%;
+    }
+  }
+}
+.welcome-section{
+  @include outer-container;
+  padding: 50px;
+  text-align: center;
+  .logo{
+    opacity: .9;
+  }//logo
+  p{
+    margin: 35px auto;
+  }
+  .gift-section-header-icon{
+    max-width: 200px;
+  }//.gift-section-header-icon
+}//welcome-section
+
+.gift-section{
+  @include transition(all .3s ease);
+  background: $blue url(../img/patterns-01.png) repeat center center;
+  position: relative;
+  text-align: center;
+  &:nth-child(odd){
+    background: $lightBlue url(../img/patterns-01.png) repeat center center;
+  }
+  .gift-section-header{
+    @include clearfix;
+    cursor: pointer;
+    position: relative;
+    @media screen and (max-width: 930px){
+      padding: 45px 0;
+    }
+    @media screen and (max-width: 600px){
+      padding: 40px 0;
+    }
+    .gift-section-header-click-prompt{
+      @include transition(all .3s ease);
+      background: $red url(../img/patterns-01.png) repeat center center;
+      bottom: 0;
+      display: none;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      p{
+        color: $white;
+        display: inline-block;
+        font-size: 1.25em;
+        letter-spacing: .125em;
+        position: relative;
+        top: -45px;
+        text-transform: uppercase;
+        width: 40%;
+        @media screen and (max-width: 1275px){
+          font-size: .95em;
+        }
+        @media screen and (max-width: 960px){
+          font-size: .9em;
+        }
+        @media screen and (max-width: 930px){
+          top: 0;
+          width: 90%;
+
+        }
+      }//p
+      .gift-section-header-icon-hover{
+        display: inline-block;
+        height: 90%;
+        margin: 5px 0;
+        @media screen and (max-width: 930px){
+          height: 50%;
+
+        }
+      }
+    }
+    &:hover{
+      .gift-section-header-click-prompt{
+        display: block;
+        .openText{
+          display: inline-block;
+        }//openText
+        .closeText{
+          display: none;
+        }//closeText
+      }
+    }
+    &.expanded{
+      background: $red url(../img/patterns-01.png) repeat center center;
+      .gift-section-header-click-prompt{
+        display: block;
+        .openText{
+          display: none;
+        }//openText
+        .closeText{
+          display: inline-block;
+        }//closeText
+      }//gift-section-header-click-prompt
+      &:hover{
+        .gift-section-header-click-prompt{
+          display: block;
+          .openText{
+            display: none;
+          }//openText
+          .closeText{
+            display: inline-block;
+          }//closeText
+        }//.gift-section-header-click-prompt
+      }//hover
+      & + .gift-section-expanded{
+        background: $red;
+      }
+    }//expanded
+
+    .gift-section-header-icon{
+      display: inline-block;
+      width: 7.5%;
+      @media screen and (max-width: 450px){
+        width: 100px;
+      }
+        & + .gift-section-header-icon{
+          @media screen and (max-width: 450px){
+            display: none;
+          }
+        }
+
+    }//.gift-section-header-icon
+  }//.gift-section-header
+  .gift-section-expanded{
+    @include clearfix;
+    border: 1px $white solid;
+    border-style: solid none none;
+    display: none;
+    margin: 0 auto;
+    padding: 0 5%;
+    div{
+      float: left;
+      margin: 25px 0;
+      padding: 75px;
+      width: 50%;
+      @media screen and (max-width: 768px){
+        width: 100%;
+        padding: 25px 0;
+      }//mq
+    }
+    .gift-section-expanded-description{
+      border: 1px $white solid;
+      border-style: none solid none none;
+      text-align: left;
+      @media screen and (max-width: 768px){
+        border-style: none;
+      }//mq
+    }//gift-section-expanded-description
+  }//gift-section-expanded
+  &.gift-one{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-one
+  &.gift-two{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-two
+  &.gift-three{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-three
+  &.gift-four{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-four
+  &.gift-five{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-five
+  &.gift-six{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-six
+  &.gift-seven{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-seven
+  &.gift-eight{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-eight
+  &.gift-nine{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-nine
+  &.gift-ten{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-ten
+  &.gift-eleven{
+  @include transition(all .3s ease);
+  background: $blue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-eleven
+  &.gift-twelve{
+  @include transition(all .3s ease);
+  background: $lightBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center;
+    .gift-section-header{
+      .gift-section-header-click-prompt{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center;
+      }
+      &.expanded{
+        background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center;
+        & + .gift-section-expanded{
+          background: $red url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center;
+        }//& + .gift-section-expanded
+      }//expanded
+    }//.gift-section-header
+  }//&.gift-eleven
+}//gift-section
+
+.thank-you-section{
+  background: $darkBlue url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  padding: 35px 0;
+  text-align: center;
+  img{
+    max-width: 200px;
+  }
+}

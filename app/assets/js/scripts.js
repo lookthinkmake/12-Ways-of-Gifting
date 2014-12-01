@@ -1,17 +1,25 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
+ * lookthinkcode
+ * Gulp, Sass, Bourbon and Neat Starter
+ * https://github.com/lookthinkmake/Lookthinkcode
+ * @author lookthinkmake
  * @version 1.0.0
  * Copyright 2014. MIT licensed.
  */
-(function ($, window, document, undefined) {
+'use strict';
 
-  'use strict';
-
-  $(function () {
-    // FastShell
+$(document).ready(function(){
+  $('.gift-section-header').click(function(){
+    if($(this).hasClass('expanded')){
+      $('.gift-section-expanded').slideUp(300);
+      $('.gift-section-header').removeClass('expanded');
+    }
+    else{
+      $('.gift-section-expanded').slideUp(300);
+      $('.gift-section-header').removeClass('expanded');
+      $(this).addClass('expanded');
+      $(this).next('.gift-section-expanded').slideDown(300);
+      $('html, body').animate({scrollTop: $(this).offset().top}, 400);
+    }
   });
-
-})(jQuery, window, document);
+});

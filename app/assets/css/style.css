@@ -1,6 +1,288 @@
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  background: blue; }
+  background: #153c68 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  color: #fef6ec;
+  font-family: "brandon-grotesque";
+  margin: 0; }
+
+p {
+  font-size: 1.25em;
+  margin: 0 auto;
+  max-width: 800px; }
+
+img {
+  max-width: 100%; }
+
+.ltm {
+  position: absolute;
+  text-align: center;
+  top: 35px;
+  width: 100%;
+  z-index: 9999; }
+  .ltm a {
+    display: block;
+    padding: 15px; }
+    .ltm a img {
+      max-width: 500px;
+      width: 25%; }
+
+.welcome-section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  text-align: center; }
+  .welcome-section:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .welcome-section .logo {
+    opacity: 0.9; }
+  .welcome-section p {
+    margin: 35px auto; }
+  .welcome-section .gift-section-header-icon {
+    max-width: 200px; }
+
+.gift-section {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #52c5d9 url(../img/patterns-01.png) repeat center center;
+  position: relative;
+  text-align: center; }
+  .gift-section:nth-child(odd) {
+    background: #79d2e4 url(../img/patterns-01.png) repeat center center; }
+  .gift-section .gift-section-header {
+    cursor: pointer;
+    position: relative; }
+    .gift-section .gift-section-header:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (max-width: 930px) {
+      .gift-section .gift-section-header {
+        padding: 45px 0; } }
+    @media screen and (max-width: 600px) {
+      .gift-section .gift-section-header {
+        padding: 40px 0; } }
+    .gift-section .gift-section-header .gift-section-header-click-prompt {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background: #ee5857 url(../img/patterns-01.png) repeat center center;
+      bottom: 0;
+      display: none;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
+      .gift-section .gift-section-header .gift-section-header-click-prompt p {
+        color: #fef6ec;
+        display: inline-block;
+        font-size: 1.25em;
+        letter-spacing: 0.125em;
+        position: relative;
+        top: -45px;
+        text-transform: uppercase;
+        width: 40%; }
+        @media screen and (max-width: 1275px) {
+          .gift-section .gift-section-header .gift-section-header-click-prompt p {
+            font-size: 0.95em; } }
+        @media screen and (max-width: 960px) {
+          .gift-section .gift-section-header .gift-section-header-click-prompt p {
+            font-size: 0.9em; } }
+        @media screen and (max-width: 930px) {
+          .gift-section .gift-section-header .gift-section-header-click-prompt p {
+            top: 0;
+            width: 90%; } }
+      .gift-section .gift-section-header .gift-section-header-click-prompt .gift-section-header-icon-hover {
+        display: inline-block;
+        height: 90%;
+        margin: 5px 0; }
+        @media screen and (max-width: 930px) {
+          .gift-section .gift-section-header .gift-section-header-click-prompt .gift-section-header-icon-hover {
+            height: 50%; } }
+    .gift-section .gift-section-header:hover .gift-section-header-click-prompt {
+      display: block; }
+      .gift-section .gift-section-header:hover .gift-section-header-click-prompt .openText {
+        display: inline-block; }
+      .gift-section .gift-section-header:hover .gift-section-header-click-prompt .closeText {
+        display: none; }
+    .gift-section .gift-section-header.expanded {
+      background: #ee5857 url(../img/patterns-01.png) repeat center center; }
+      .gift-section .gift-section-header.expanded .gift-section-header-click-prompt {
+        display: block; }
+        .gift-section .gift-section-header.expanded .gift-section-header-click-prompt .openText {
+          display: none; }
+        .gift-section .gift-section-header.expanded .gift-section-header-click-prompt .closeText {
+          display: inline-block; }
+      .gift-section .gift-section-header.expanded:hover .gift-section-header-click-prompt {
+        display: block; }
+        .gift-section .gift-section-header.expanded:hover .gift-section-header-click-prompt .openText {
+          display: none; }
+        .gift-section .gift-section-header.expanded:hover .gift-section-header-click-prompt .closeText {
+          display: inline-block; }
+      .gift-section .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857; }
+    .gift-section .gift-section-header .gift-section-header-icon {
+      display: inline-block;
+      width: 7.5%; }
+      @media screen and (max-width: 450px) {
+        .gift-section .gift-section-header .gift-section-header-icon {
+          width: 100px; } }
+      @media screen and (max-width: 450px) {
+        .gift-section .gift-section-header .gift-section-header-icon + .gift-section-header-icon {
+          display: none; } }
+  .gift-section .gift-section-expanded {
+    border: 1px #fef6ec solid;
+    border-style: solid none none;
+    display: none;
+    margin: 0 auto;
+    padding: 0 5%; }
+    .gift-section .gift-section-expanded:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .gift-section .gift-section-expanded div {
+      float: left;
+      margin: 25px 0;
+      padding: 75px;
+      width: 50%; }
+      @media screen and (max-width: 768px) {
+        .gift-section .gift-section-expanded div {
+          width: 100%;
+          padding: 25px 0; } }
+    .gift-section .gift-section-expanded .gift-section-expanded-description {
+      border: 1px #fef6ec solid;
+      border-style: none solid none none;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        .gift-section .gift-section-expanded .gift-section-expanded-description {
+          border-style: none; } }
+  .gift-section.gift-one {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center; }
+    .gift-section.gift-one .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center; }
+    .gift-section.gift-one .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center; }
+      .gift-section.gift-one .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-01.png) repeat center center; }
+  .gift-section.gift-two {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center; }
+    .gift-section.gift-two .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center; }
+    .gift-section.gift-two .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center; }
+      .gift-section.gift-two .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-02.png) repeat center center; }
+  .gift-section.gift-three {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center; }
+    .gift-section.gift-three .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center; }
+    .gift-section.gift-three .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center; }
+      .gift-section.gift-three .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-03.png) repeat center center; }
+  .gift-section.gift-four {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center; }
+    .gift-section.gift-four .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center; }
+    .gift-section.gift-four .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center; }
+      .gift-section.gift-four .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-04.png) repeat center center; }
+  .gift-section.gift-five {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center; }
+    .gift-section.gift-five .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center; }
+    .gift-section.gift-five .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center; }
+      .gift-section.gift-five .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-05.png) repeat center center; }
+  .gift-section.gift-six {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center; }
+    .gift-section.gift-six .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center; }
+    .gift-section.gift-six .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center; }
+      .gift-section.gift-six .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-06.png) repeat center center; }
+  .gift-section.gift-seven {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center; }
+    .gift-section.gift-seven .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center; }
+    .gift-section.gift-seven .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center; }
+      .gift-section.gift-seven .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-07.png) repeat center center; }
+  .gift-section.gift-eight {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center; }
+    .gift-section.gift-eight .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center; }
+    .gift-section.gift-eight .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center; }
+      .gift-section.gift-eight .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-08.png) repeat center center; }
+  .gift-section.gift-nine {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center; }
+    .gift-section.gift-nine .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center; }
+    .gift-section.gift-nine .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center; }
+      .gift-section.gift-nine .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-09.png) repeat center center; }
+  .gift-section.gift-ten {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center; }
+    .gift-section.gift-ten .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center; }
+    .gift-section.gift-ten .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center; }
+      .gift-section.gift-ten .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-10.png) repeat center center; }
+  .gift-section.gift-eleven {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #52c5d9 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center; }
+    .gift-section.gift-eleven .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center; }
+    .gift-section.gift-eleven .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center; }
+      .gift-section.gift-eleven .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-11.png) repeat center center; }
+  .gift-section.gift-twelve {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #79d2e4 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center; }
+    .gift-section.gift-twelve .gift-section-header .gift-section-header-click-prompt {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center; }
+    .gift-section.gift-twelve .gift-section-header.expanded {
+      background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center; }
+      .gift-section.gift-twelve .gift-section-header.expanded + .gift-section-expanded {
+        background: #ee5857 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-12.png) repeat center center; }
+
+.thank-you-section {
+  background: #153c68 url(http://lookthinkco.de/client/img/assets/img/patterns/patterns-welcome.png) repeat center center;
+  padding: 35px 0;
+  text-align: center; }
+  .thank-you-section img {
+    max-width: 200px; }
